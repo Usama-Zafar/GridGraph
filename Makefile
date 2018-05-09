@@ -3,7 +3,7 @@ ROOT_DIR= $(shell pwd)
 TARGETS= bin/preprocess bin/bfs bin/wcc bin/pagerank bin/spmv bin/mis bin/radii
 
 CXX?= g++
-CXXFLAGS?= -O3 -Wall -std=c++11 -g -fopenmp -I$(ROOT_DIR)
+CXXFLAGS?= -O3 -Wall -std=c++11 -g -fopenmp -I"$(ROOT_DIR)"
 HEADERS= $(shell find . -name '*.hpp')
 
 all: $(TARGETS)
